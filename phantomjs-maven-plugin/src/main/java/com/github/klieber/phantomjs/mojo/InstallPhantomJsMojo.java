@@ -170,6 +170,9 @@ public class InstallPhantomJsMojo extends AbstractPhantomJsMojo implements Phant
     return this.outputDirectory;
   }
 
+  public InstallPhantomJsMojo() {
+  }
+
   public void run() throws MojoFailureException {
     RepositoryDetails repositoryDetails = new RepositoryDetails();
     repositoryDetails.setRepositorySystem(this.repositorySystem);
